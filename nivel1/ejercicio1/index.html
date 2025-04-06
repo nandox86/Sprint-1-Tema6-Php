@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario PHP</title>
+    <style>
+        /* estilos generales para la pagina */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        /* contenedor del formulario */
+        .form-container {
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            max-width: 400px;
+        }
+
+        /* estilos para los titulos */
+        h1 {
+            text-align: center;
+            color: #333333;
+        }
+
+        /* estilos para las etiquetas */
+        label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: bold;
+            color: #555555;
+        }
+
+        /* estilos para los campos de entrada */
+        input {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #cccccc;
+            border-radius: 4px;
+            font-size: 14px;
+        }
+
+        /* estilos para el boton */
+        button {
+            width: 100%;
+            padding: 10px;
+            background-color: #007bff;
+            color: #ffffff;
+            border: none;
+            border-radius: 4px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        /* efecto hover para el boton */
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+
+    <!--Crea un formulario HTML con los campos que desees (al menos un nombre o username). 
+    El formulario debe tener como action un documento PHP. El código de este documento PHP deberá 
+    mostrar los valores de los distintos campos del formulario mediante variables superglobales. Graba 
+    además algunos de estos valores dentro de variables de sesión.-->
+    
+
+    <h2>Datos de Acceso</h2>
+<!-- formulario sencillo con metodo post y action apuntando al archivo doc.php -->
+<form action="doc.php" method="post">
+    <!-- campo para ingresar el nombre del usuario -->
+    <label for="username">Nombre de usuario:</label>
+    <input type="text" id="username" name="username" required>
+    
+    <!-- campo para ingresar el correo del usuario -->
+    <label for="email">Correo electronico:</label>
+    <input type="email" id="email" name="email" required>
+    
+    <!-- boton para enviar el formulario -->
+    <button type="submit">Enviar</button>
+</form>
+</div>
+</body>     
+</html>
